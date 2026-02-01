@@ -34,11 +34,6 @@ const Home: React.FC<HomeProps> = ({ lang }) => {
           href={lang === "en" ? baseUrl : `${baseUrl}/${i18n.language}`}
         />
 
-        {/* hrefLang */}
-        <link rel="alternate" href={`${baseUrl}/ko`} hrefLang="ko" />
-        <link rel="alternate" href={`${baseUrl}`} hrefLang="en" />
-        <link rel="alternate" href={`${baseUrl}`} hrefLang="x-default" />
-
         {/* Open Graph */}
         <meta property="og:title" content={t("meta.title")} />
         <meta property="og:description" content={t("meta.description")} />
@@ -46,7 +41,6 @@ const Home: React.FC<HomeProps> = ({ lang }) => {
           property="og:url"
           content={lang === "en" ? baseUrl : `${baseUrl}/${i18n.language}`}
         />
-        <meta property="og:image" content={`${baseUrl}/og-image.png`} />
       </Helmet>
 
       <HeaderFrame />
