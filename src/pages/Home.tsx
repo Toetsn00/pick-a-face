@@ -5,7 +5,7 @@ import BodyFrame from "../components/BodyFrame";
 import FooterFrame from "../components/FooterFrame";
 import { Helmet } from "react-helmet-async";
 
-const baseUrl = "https://toetsn00.github.io";
+const baseUrl = "https://pick-a-face.netlify.app";
 
 interface HomeProps {
   lang: "en" | "ko";
